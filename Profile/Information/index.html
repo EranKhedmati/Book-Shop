@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        .type-acount>div {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Content start -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Menu start -->
+            <div class="col-lg-3">
+                <div>
+                    <div class="border rounded p-2">
+                        <div class="fs-4 mb-2">
+                            <img src="../../src/user-svgrepo-com.svg" width="40px" alt="">
+                            User
+                        </div>
+                        <div class="fs-5 d-flex justify-content-between">
+                            <p>wallet:</p>
+                            <p>0$ <img src="../../src/right-arrow-svgrepo-com.svg" width="20px"></p>
+                        </div>
+                    </div>
+                    <div class="type-acount">
+                        <div class="mt-4">
+                            <img src="../../src/message-svgrepo-com.svg" width="25px" alt=""> Comments
+                        </div>
+                        <div class="mt-4">
+                            <img src="../../src/location-svgrepo-com.svg" width="25px" alt=""> Locations
+                        </div>
+                        <div class="mt-4">
+                            <img src="../../src/heart-svgrepo-com.svg" width="25px" alt=""> Favorites
+                        </div>
+                        <div class="mt-4">
+                            <img src="../../src/user-svgrepo-com.svg" width="25px" alt=""> Information
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu end -->
+            <!-- Information start -->
+
+            <div class="col-lg-9 mt-lg-0 mt-5">
+                <form action="">
+                    <div class="fs-4">
+                        Account information
+                    </div>
+                    <div class="border p-3 rounded my-2">
+                        <p class="border-bottom border-danger">Personal Information</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group input-group-sm mb-3 my-2">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">First Name</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group input-group-sm mb-3 my-2">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Last Name</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2">
+                                <div class="d-flex gap-3">
+                                    <div class="form-check d">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Male
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Female
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">
+                                            Other
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group input-group-sm mb-3 my-2">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Birthday</span>
+                                    <input type="date" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control" placeholder="Recipient's username"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2" id="email" required>
+                                    <span class="input-group-text" id="basic-addon2" >@example.com</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group input-group-sm mb-3 my-2">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Phone Number</span>
+                                    <input type="number" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group input-group-sm mb-3 my-2">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">National Code</span>
+                                    <input type="number" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group input-group-sm mb-3 my-2">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Card Number</span>
+                                    <input type="number" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-danger" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Information end -->
+        </div>
+    </div>
+    <!-- Content end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
