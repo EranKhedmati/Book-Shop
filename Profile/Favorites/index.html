@@ -38,10 +38,97 @@
         .type-acount>div {
             cursor: pointer;
         }
+
+        * {
+            list-style: none;
+        }
+
+        .footer-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        li {
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        a:hover {
+            color: red;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-md bg-light border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Book Plus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../Home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../Cart/index.html" class="nav-link">
+                            <img src="../../src/cart-arrow-down-solid.svg" width="30px" height="20px" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../src/profile-svgrepo-com.svg" alt="">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../index.html">View account</a></li>
+                            <li><a class="dropdown-item" href="../../Book Plus/index.html">Book Plus</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Navtabs strat -->
+    <ul class="nav border-bottom justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+                <img src="../../src/fire-svgrepo-com.svg" width="20px" height="20px">
+                Bestselling
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="../../src/discount-svgrepo-com.svg" width="20px" height="20px">
+                Discount
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Question?</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Become a seller!</a>
+        </li>
+    </ul>
+    <!-- Navtabs end -->
+
     <!-- Content start -->
     <div class="container my-5">
         <div class="row">
@@ -59,13 +146,19 @@
                     </div>
                     <div class="type-acount">
                         <div class="mt-4">
-                            <img src="../../src/message-svgrepo-com.svg" width="25px" alt=""> Comments
+                            <a href="../comment/index.html">
+                                <img src="../../src/message-svgrepo-com.svg" width="25px" alt=""> Comments
+                            </a>
                         </div>
                         <div class="mt-4">
-                            <img src="../../src/heart-svgrepo-com.svg" width="25px" alt=""> Favorites
+                            <a href="index.html">
+                                <img src="../../src/heart-svgrepo-com.svg" width="25px" alt=""> Favorites
+                            </a>
                         </div>
                         <div class="mt-4">
-                            <img src="../../src/user-svgrepo-com.svg" width="25px" alt=""> Information
+                            <a href="../Information/index.html">
+                                <img src="../../src/user-svgrepo-com.svg" width="25px" alt=""> Information
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -75,8 +168,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="card d-block mx-auto mx-md-0 border my-2 " style="width: 16rem;">
-                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px" class="card-img-top p-2"
-                                alt="...">
+                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px"
+                                class="card-img-top p-2" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Book title</h5>
                                 <p class="card-text">Book for read and learn how to live beter and learn the science ,
@@ -89,8 +182,8 @@
                     </div>
                     <div class="col">
                         <div class="card d-block mx-auto mx-md-0 border my-2" style="width: 16rem;">
-                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px" class="card-img-top p-2"
-                                alt="...">
+                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px"
+                                class="card-img-top p-2" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Book title</h5>
                                 <p class="card-text">Book for read and learn how to live beter and learn the science ,
@@ -103,8 +196,8 @@
                     </div>
                     <div class="col">
                         <div class="card d-block mx-auto mx-md-0 border my-2" style="width: 16rem;">
-                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px" class="card-img-top p-2"
-                                alt="...">
+                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px"
+                                class="card-img-top p-2" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Book title</h5>
                                 <p class="card-text">Book for read and learn how to live beter and learn the science ,
@@ -117,8 +210,8 @@
                     </div>
                     <div class="col">
                         <div class="card d-block mx-auto mx-md-0 border my-2" style="width: 16rem;">
-                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px" class="card-img-top p-2"
-                                alt="...">
+                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px"
+                                class="card-img-top p-2" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Book title</h5>
                                 <p class="card-text">Book for read and learn how to live beter and learn the science ,
@@ -131,8 +224,8 @@
                     </div>
                     <div class="col">
                         <div class="card d-block mx-auto mx-md-0 border my-2" style="width: 16rem;">
-                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px" class="card-img-top p-2"
-                                alt="...">
+                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px"
+                                class="card-img-top p-2" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Book title</h5>
                                 <p class="card-text">Book for read and learn how to live beter and learn the science ,
@@ -145,8 +238,8 @@
                     </div>
                     <div class="col">
                         <div class="card d-block mx-auto mx-md-0 border my-2" style="width: 16rem;">
-                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px" class="card-img-top p-2"
-                                alt="...">
+                            <img src="../../src/book-svgrepo-com.svg" width="200px" height="200px"
+                                class="card-img-top p-2" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Book title</h5>
                                 <p class="card-text">Book for read and learn how to live beter and learn the science ,
@@ -163,6 +256,118 @@
         </div>
     </div>
     <!-- Content end -->
+
+    <!-- Footer start -->
+    <footer class="border-top my-3">
+
+        <!-- Card start -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-card">
+                        <img src="../../src/secure-svgrepo-com.svg" width="50px">
+                        <p>Guarantee the originality of the book</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" footer-card">
+                        <img src="../../src/support-svgrepo-com.svg" width="50px">
+                        <p>Support with 12 nights</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" footer-card">
+                        <img src="../../src/reusable-shopping-bag-svgrepo-com.svg" width="50px">
+                        <p>suitable packaging</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" footer-card">
+                        <img src="../../src/discount-svgrepo-card-com.svg" width="50px">
+                        <p>More products discounts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card end -->
+
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <div class="h4">With Book Shop</div>
+                        <ul class="text-secondary">
+                            <li>News room Book Shop</li>
+                            <li>Book Shop sales</li>
+                            <li>Career Opportunities</li>
+                            <li>Contact the Book Shop</li>
+                            <li>About Book Shop</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="h4">customer services</div>
+                        <ul class="text-secondary">
+                            <li>Answers to frequently asked questions</li>
+                            <li>Book return procedure</li>
+                            <li>Terms of Use</li>
+                            <li>Privacy</li>
+                            <li>Report a bug</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <h4>Shopping from Book Shop</h4>
+                        <ul class="text-secondary">
+                            <li>How to register an order</li>
+                            <li>Order submission procedure</li>
+                            <li>Payment method</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="h4">be with us!</div>
+                        <div class="row my-4">
+                            <div class="col">
+                                <div>
+                                    <img class="p-1" src="../../src/instagram-logo-svgrepo-com.svg" width="30px" alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <img class="p-1" src="../../src/twitter-logo-shape-svgrepo-com.svg" width="30px"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <img class="p-1" src="../../src/linkedin-square-logo-svgrepo-com.svg" width="30px"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <img class="p-1" src="../../src/aparat-svgrepo-com.svg" width="30px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h6">Stay up to date with the latest discounts by emailing us</div>
+                        <div class="input-group my-4">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@example.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer end -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
